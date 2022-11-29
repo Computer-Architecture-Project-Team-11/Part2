@@ -139,6 +139,29 @@
        ```python
        system.l2.overall_miss_rate::total           0.999944                       # miss rate for overall accesses
        ```
+   Below are presented the plots for each parameter comparing each benchmark:
+    * Execution Time
+
+    ![Screenshot from 2022-11-29 21-56-18](https://user-images.githubusercontent.com/105559292/204636530-5fa199a2-860a-4463-91e3-4c82d2fa8c2d.png)
+
+    * Cycles per Instruction
+
+    ![cpi](https://user-images.githubusercontent.com/105559292/204637624-b4095544-9e93-4476-bdd8-ec6a75771440.png)
+
+
+    * L1 Instruction Cache Miss Rate
+
+    ![Screenshot from 2022-11-29 21-59-17](https://user-images.githubusercontent.com/105559292/204636575-6f5774f0-7178-4da5-8e13-f6f262694919.png)
+
+    * L1 Data Cache Miss Rate
+
+    ![L1 data](https://user-images.githubusercontent.com/105559292/204637663-4749d493-2deb-4920-bbbe-56827fbb926a.png)
+
+
+    * L2 Cache Miss Rate
+
+    ![Screenshot from 2022-11-29 22-01-40](https://user-images.githubusercontent.com/105559292/204636648-2ad317ff-af8f-44a9-82ea-a51dcc4581aa.png)
+
 3. For all benchmarks the following values were equal with the respective changes in the frequency:
       * Default frequency
          * System cpu clock
