@@ -120,24 +120,24 @@
 
       i) **Execution time**:
      ```python
-     sim_seconds                                  0.513528                       # Number of seconds simulated
+     sim_seconds                                  0.174671                       # Number of seconds simulated
      ```
      ii) **CPI**:
      ```python
-     system.cpu.cpi                               10.270554                       # CPI: cycles per instruction
+     system.cpu.cpi                               3.493415                       # CPI: cycles per instruction
      ```
      iii) **Overall miss rates**:
        * L1 Instruction cache:
        ```python
-       system.cpu.icache.overall_miss_rate::total     0.000020                       # miss rate for overall accesses
+       system.cpu.icache.overall_miss_rate::total     0.000094                       # miss rate for overall accesses
        ```
        * L1 Data cache:
        ```python
-       system.cpu.dcache.overall_miss_rate::total     0.121831                       # miss rate for overall accesses
+       system.cpu.dcache.overall_miss_rate::total     0.060972                       # miss rate for overall accesses
        ```
        * L2 cache:
        ```python
-       system.l2.overall_miss_rate::total           0.907550                       # miss rate for overall accesses
+       system.l2.overall_miss_rate::total           0.999944                       # miss rate for overall accesses
        ```
 3. For all benchmarks the following values were equal with the respective changes in the frequency:
       * Default frequency
