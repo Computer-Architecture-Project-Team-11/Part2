@@ -167,8 +167,19 @@
           ```python 
           system.clk_domain.clock                          1000                       # Clock period in ticks
           ```
+      There seems to be an inversely proportional relation between the frequency and the System cpu clock. This means that the default frequency is set to 2GHz.
 
-4. gbdrgb
+4. Changing the memory type from `DDR3_1600_x64` to `DDR3_2133_x64` to the sjeng benchmark there seems to be a slight decreament in the simulated time:
+   ```python 
+      sim_seconds                                  0.513528                       # Number of seconds simulated
+      sim_seconds                                  0.493128                       # Number of seconds simulated
+    ```
+   which is expected since the second memory type has a quicker clock. Also we observed that the cycles simulated are also decreased:
+
+      
+       system.cpu.numCycles                       1027055373                       # number of cpu cycles simulated
+       system.cpu.numCycles                        986256235                       # number of cpu cycles simulated
+    
 
 ## Second Section
 
