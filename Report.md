@@ -191,5 +191,5 @@
 
 ## Third Section
 
-Refferences:
+References:
   * [Difference between CPU clock and system clock](https://cs.stackexchange.com/questions/32149/what-are-system-clock-and-cpu-clock-and-what-are-their-functions)
