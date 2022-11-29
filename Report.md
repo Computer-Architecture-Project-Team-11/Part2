@@ -25,9 +25,11 @@
         [system]
          cache_line_size=64
         ```
-2. Benchmarks:
-   * dtdgn
-   * sth
+2. For every benchmark the following information can be found in their respective `stats.txt` files:
+   * **specbzip**
+     i) Execution time:
+     ```python
+     sim_seconds    
    * spechmmer
    * sjeng
    * htr
