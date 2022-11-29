@@ -70,8 +70,50 @@
        ```python
        system.l2.overall_miss_rate::total           0.055046                       # miss rate for overall accesses
        ```
-   * spechmmer
+   * **spechmmer**
+     i) **Execution time**:
+     ```python
+     sim_seconds                                  0.059396                       # Number of seconds simulated
+     ```
+     ii) **CPI**:
+     ```python
+     system.cpu.cpi                               1.187917                       # CPI: cycles per instruction
+     ```
+     iii) **Overall miss rates**:
+       * L1 Instruction cache:
+       ```python
+       system.cpu.icache.overall_miss_rate::total     0.000221                       # miss rate for overall accesses
+       ```
+       * L1 Data cache:
+       ```python
+       system.cpu.dcache.overall_miss_rate::total     0.001637                       # miss rate for overall accesses
+       ```
+       * L2 cache:
+       ```python
+       system.l2.overall_miss_rate::total           0.077760                       # miss rate for overall accesses
+       ```
    * sjeng
+     i) **Execution time**:
+     ```python
+     sim_seconds                                  0.513528                       # Number of seconds simulated
+     ```
+     ii) **CPI**:
+     ```python
+     system.cpu.cpi                               10.270554                       # CPI: cycles per instruction
+     ```
+     iii) **Overall miss rates**:
+       * L1 Instruction cache:
+       ```python
+       system.cpu.icache.overall_miss_rate::total     0.000020                       # miss rate for overall accesses
+       ```
+       * L1 Data cache:
+       ```python
+       system.cpu.dcache.overall_miss_rate::total     0.121831                       # miss rate for overall accesses
+       ```
+       * L2 cache:
+       ```python
+       system.l2.overall_miss_rate::total           0.907550                       # miss rate for overall accesses
+       ```
    * htr
 3. Benchmarks:
    * dtdgn
