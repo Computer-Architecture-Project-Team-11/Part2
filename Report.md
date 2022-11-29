@@ -71,6 +71,7 @@
        system.l2.overall_miss_rate::total           0.055046                       # miss rate for overall accesses
        ```
    * **spechmmer**
+
      i) **Execution time**:
      ```python
      sim_seconds                                  0.059396                       # Number of seconds simulated
@@ -92,7 +93,8 @@
        ```python
        system.l2.overall_miss_rate::total           0.077760                       # miss rate for overall accesses
        ```
-   * sjeng
+   * **sjeng**
+
      i) **Execution time**:
      ```python
      sim_seconds                                  0.513528                       # Number of seconds simulated
@@ -114,13 +116,58 @@
        ```python
        system.l2.overall_miss_rate::total           0.907550                       # miss rate for overall accesses
        ```
-   * htr
-3. Benchmarks:
-   * dtdgn
-   * sth
-   * spechmmer
-   * sjeng
-   * htr
+   * **speclibm**
+
+      i) **Execution time**:
+     ```python
+     sim_seconds                                  0.513528                       # Number of seconds simulated
+     ```
+     ii) **CPI**:
+     ```python
+     system.cpu.cpi                               10.270554                       # CPI: cycles per instruction
+     ```
+     iii) **Overall miss rates**:
+       * L1 Instruction cache:
+       ```python
+       system.cpu.icache.overall_miss_rate::total     0.000020                       # miss rate for overall accesses
+       ```
+       * L1 Data cache:
+       ```python
+       system.cpu.dcache.overall_miss_rate::total     0.121831                       # miss rate for overall accesses
+       ```
+       * L2 cache:
+       ```python
+       system.l2.overall_miss_rate::total           0.907550                       # miss rate for overall accesses
+       ```
+3. For all benchmarks the following values were equal with the respective changes in the frequency:
+      * Default frequency
+         * System cpu clock
+          ```python 
+          system.cpu_clk_domain.clock                       500                       # Clock period in ticks
+          ```
+         * System clock
+          ```python 
+          system.clk_domain.clock                          1000                       # Clock period in ticks
+          ```
+      * 1GHz
+         * System cpu clock
+          ```python 
+          system.cpu_clk_domain.clock                       1000                       # Clock period in ticks
+          ```
+         * System clock
+          ```python 
+          system.clk_domain.clock                          1000                       # Clock period in ticks
+          ```
+      * 3GHz
+         * System cpu clock
+          ```python 
+          system.cpu_clk_domain.clock                       333                       # Clock period in ticks
+          ```
+         * System clock
+          ```python 
+          system.clk_domain.clock                          1000                       # Clock period in ticks
+          ```
+
 4. gbdrgb
 
 ## Second Section
