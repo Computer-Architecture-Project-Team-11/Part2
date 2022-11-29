@@ -59,7 +59,7 @@
                 "app_path": "/proc", 
                 "name": "redirect_paths0", 
                 "host_paths": [
-                    "spec/speclibm_1GHz_results/fs/proc"
+                    "spec_results/speclibm_1GHz_results/fs/proc"
                 ], 
                 "eventq_index": 0, 
                 "cxx_class": "RedirectPath", 
@@ -70,7 +70,7 @@
                 "app_path": "/sys", 
                 "name": "redirect_paths1", 
                 "host_paths": [
-                    "spec/speclibm_1GHz_results/fs/sys"
+                    "spec_results/speclibm_1GHz_results/fs/sys"
                 ], 
                 "eventq_index": 0, 
                 "cxx_class": "RedirectPath", 
@@ -81,7 +81,7 @@
                 "app_path": "/tmp", 
                 "name": "redirect_paths2", 
                 "host_paths": [
-                    "spec/speclibm_1GHz_results/fs/tmp"
+                    "spec_results/speclibm_1GHz_results/fs/tmp"
                 ], 
                 "eventq_index": 0, 
                 "cxx_class": "RedirectPath", 
@@ -1263,9 +1263,11 @@
                         "name": "workload", 
                         "cmd": [
                             "spec_cpu2006/470.lbm/src/speclibm", 
-                            "20spec_cpu2006/470.lbm/data/lbm.in", 
+                            "20", 
+                            "spec_cpu2006/470.lbm/data/lbm.in", 
                             "0", 
-                            "1spec_cpu2006/470.lbm/data/100_100_130_cf_a.of"
+                            "1", 
+                            "spec_cpu2006/470.lbm/data/100_100_130_cf_a.of"
                         ], 
                         "errout": "cerr", 
                         "useArchPT": false, 
