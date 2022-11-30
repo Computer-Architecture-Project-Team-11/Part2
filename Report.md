@@ -196,6 +196,8 @@
       
       If we added a new processor, it would most likely be affected by the change of the frequency and have a different cpu clock, since it is a new CPU and has a           seperate clock from the rest of the system. 
       
+      Based on the execution times we can see that as the frequency increases the execution time decreases. Though, the execution time is not decreasing proporsionaly as we observed with the cpu.clock above. There is not a scalling regarding the execution time because there is not a 1-1 relation between them. The execution time cannot decrease as easily. modifing only one system parameter, but it is affected by a lot others too. 
+      
 
 4. Changing the memory type from `DDR3_1600_x64` to `DDR3_2133_x64` to the sjeng benchmark there seems to be a slight decreament in the simulated time:
    ```python 
