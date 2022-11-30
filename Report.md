@@ -162,6 +162,8 @@
 
     ![Screenshot from 2022-11-29 22-01-40](https://user-images.githubusercontent.com/105559292/204636648-2ad317ff-af8f-44a9-82ea-a51dcc4581aa.png)
 
+   From the graphs we can see that the values of Execution Time and Cycles per Instruction are significantly higher for the sjeng and speclibm benchmarks. This happens because as we see from the miss rates below, these two benchmarks are the only ones with two out three high miss rates (l1 data chache miss rate and l2 cache miss rate). The miss rates as well as the respective access time affect the CPI. So with higher miss rates, higher CPI and Execution Time are expected. 
+
 3. For all benchmarks the following values were equal with the respective changes in the frequency:
       * Default frequency
          * System cpu clock
