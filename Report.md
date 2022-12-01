@@ -215,8 +215,9 @@
 
 1. We run 10 simulations for the first benchmark to test the affection that the parameters had on the CPI. Then for each of the rest of the benchmarks we run 5 simultations adjusting the changes on the values of the parameters accordingly.
 2. Based on the results shown on the graphs and general information and knowlegde regarding the CPI we extracted the following conclusions:
+   * the value of the CPI is highly connected with the **miss rates**. So to achieve a low CPI value we tried to decrease the miss rates.
+   * we observed that th increament of the **caches' sizes** and **associativities** contribute to lowering the miss rates. And this means that we het a lower CPI value too.
    * decreasing the **cache line size** resultes in higher CPI as tested in the first benchmark. Instead by increasing the cache line size we managed to decrease the value of the CPI
-   *  
 
 ## Third Section
 
