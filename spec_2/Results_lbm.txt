@@ -1,6 +1,6 @@
-Benchmarks	system.cpu.cpi
-spec_lbm_0	3.493293
-spec_lbm_1	3.493293
-spec_lbm_2	3.496180
-spec_lbm_3	2.581299
-spec_lbm_4	2.581254
+Benchmarks	system.cpu.cpi	system.cpu.dcache.overall_miss_rate::total	system.cpu.icache.overall_miss_rate::total	system.l2.overall_miss_rate::total
+spec_lbm_0	3.493293	0.060972	0.000085	0.999979
+spec_lbm_1	3.493293	0.060972	0.000085	0.999979
+spec_lbm_2	3.496180	0.060972	0.000085	0.999979
+spec_lbm_3	2.581299	0.030487	0.000112	0.999799
+spec_lbm_4	2.581254	0.030487	0.000083	0.999961

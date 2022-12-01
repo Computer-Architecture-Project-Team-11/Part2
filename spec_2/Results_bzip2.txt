@@ -1,6 +1,6 @@
-Benchmarks	system.cpu.cpi
-bzip2_1	1.664058
-bzip2_3	1.852581
-bzip2_5	1.666573
-bzip2_7	1.625566
-bzip2_9	1.617782
+Benchmarks	system.cpu.cpi	system.cpu.dcache.overall_miss_rate::total	system.cpu.icache.overall_miss_rate::total	system.l2.overall_miss_rate::total
+bzip2_1	1.664058	0.013335	0.000070	0.315971
+bzip2_3	1.852581	0.018283	0.000087	0.427357
+bzip2_5	1.666573	0.014359	0.000067	0.173845
+bzip2_7	1.625566	0.009841	0.000053	0.260146
+bzip2_9	1.617782	0.009068	0.000052	0.284343
