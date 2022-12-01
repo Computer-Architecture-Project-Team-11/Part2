@@ -1,0 +1,6 @@
+Benchmarks	system.cpu.cpi
+spec_hmmer_0	1.185557
+spec_hmmer_1	1.185557
+spec_hmmer_2	1.185557
+spec_hmmer_3	1.181978
+spec_hmmer_4	1.179450

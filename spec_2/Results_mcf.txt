@@ -1,0 +1,6 @@
+Benchmarks	system.cpu.cpi
+spec_mcf_0	1.154963
+spec_mcf_1	1.154963
+spec_mcf_2	1.163273
+spec_mcf_3	1.330534
+spec_mcf_4	1.123168

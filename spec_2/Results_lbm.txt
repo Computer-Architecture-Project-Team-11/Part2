@@ -1,0 +1,6 @@
+Benchmarks	system.cpu.cpi
+spec_lbm_0	3.493293
+spec_lbm_1	3.493293
+spec_lbm_2	3.496180
+spec_lbm_3	2.581299
+spec_lbm_4	2.581254

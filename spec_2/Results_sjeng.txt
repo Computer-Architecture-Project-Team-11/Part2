@@ -1,0 +1,6 @@
+Benchmarks	system.cpu.cpi
+sjeng_0	6.799610
+sjeng_1	6.794781
+sjeng_2	5.175560
+sjeng_3	5.175560
+sjeng_4	5.166689

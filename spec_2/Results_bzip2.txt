@@ -1,0 +1,6 @@
+Benchmarks	system.cpu.cpi
+bzip2_1	1.664058
+bzip2_3	1.852581
+bzip2_5	1.666573
+bzip2_7	1.625566
+bzip2_9	1.617782
