@@ -116,7 +116,7 @@
        ```python
        system.l2.overall_miss_rate::total           0.907550                       # miss rate for overall accesses
        ```
-   * **speclibm**
+   * **speclbm**
 
       i) **Execution time**:
      ```python
@@ -214,9 +214,31 @@
 ## Second Section
 
 1. We run 10 simulations for the first benchmark to test the affection that the parameters had on the CPI. Then for each of the rest of the benchmarks we run 5 simultations adjusting the changes on the values of the parameters accordingly.
-2. Based on the results shown on the graphs and general information and knowlegde regarding the CPI we extracted the following conclusions:
+2. Graphs for each benchmark about the affections of the parameters on the CPI
+   * spec_bzip
+
+      ![bzip](https://user-images.githubusercontent.com/105559292/205138100-ff6c7e3b-1652-4f1f-a179-07400f29563e.png)
+ 
+   * spec_mcf
+
+      ![mcf](https://user-images.githubusercontent.com/105559292/205138145-14d4632e-4e2c-4ac4-b911-65dc28de43c1.png)
+
+   * spec_hmmer
+
+      ![hmmer](https://user-images.githubusercontent.com/105559292/205138201-2deb28b7-6e57-42f1-a883-23631ba52dbb.png)
+
+   * spec_sjeng
+
+      ![sjeng](https://user-images.githubusercontent.com/105559292/205138267-a0d94604-05df-47ea-b851-1513bfe90510.png)
+
+   * spec_lbm
+
+      ![lbm](https://user-images.githubusercontent.com/105559292/205138317-ed8bf824-37be-418d-9537-8a310cf11497.png)
+
+
+Based on the results shown on the graphs and general information and knowlegde regarding the CPI we extracted the following conclusions:
    * the value of the CPI is highly connected with the **miss rates**. So to achieve a low CPI value we tried to decrease the miss rates.
-   * we observed that th increament of the **caches' sizes** and **associativities** contribute to lowering the miss rates. And this means that we het a lower CPI value too.
+   * we observed that th increament of the **caches' sizes** and **associativities** contribute to lowering the miss rates. And this means that we have a lower CPI value too.
    * decreasing the **cache line size** resultes in higher CPI as tested in the first benchmark. Instead by increasing the cache line size we managed to decrease the value of the CPI
 
 ## Third Section
