@@ -213,8 +213,10 @@
 
 ## Second Section
 
-1.dfbdfsb
-2.fvefvs
+1. We run 10 simulations for the first benchmark to test the affection that the parameters had on the CPI. Then for each of the rest of the benchmarks we run 5 simultations adjusting the changes on the values of the parameters accordingly.
+2. Based on the results shown on the graphs and general information and knowlegde regarding the CPI we extracted the following conclusions:
+   * decreasing the **cache line size** resultes in higher CPI as tested in the first benchmark. Instead by increasing the cache line size we managed to decrease the value of the CPI
+   *  
 
 ## Third Section
 
