@@ -243,6 +243,15 @@ Based on the results shown on the graphs and general information and knowlegde r
 
 ## Third Section
 
+stgnrbng
+
+Why we ended up in the equation above.
+
+* As the size of the Cache increases the effect of small associativity of this cache on time and speed is similar to a bigger associativity.
+* L1 cache is more "expensive" than L2.
+* The size of the cache line has the same effect as the size of the cache on the perforamnce with different associativity values. As the size increases the different values of the associativity seem to have similar results as far as time and speed are concerned. 
+* In general larger cache sizes tend to have worse results regarding the speed and time.
+
 References:
   * [Difference between CPU clock and system clock](https://cs.stackexchange.com/questions/32149/what-are-system-clock-and-cpu-clock-and-what-are-their-functions)
   * [Caches affection on CPI](https://courses.cs.washington.edu/courses/cse378/07au/lectures/L18-Cache-Wrap-up.pdf)
