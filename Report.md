@@ -243,16 +243,26 @@ Based on the results shown on the graphs and general information and knowlegde r
 
 ## Third Section
 
-stgnrbng
+Function reagrding the balnce between cost and performance:
 
-Why we ended up in the equation above.
+> ## Best_cost_performance = cache_line_size * (a* l1_size/l1_assoc + b* l2_size/l2_assoc) 
+
+(a < b, l1_size < l2_size)
+- as l1 we have inlsuded both li and ld. 
+
+Why we ended up in the equation above:
 
 * As the size of the Cache increases the effect of small associativity of this cache on time and speed is similar to a bigger associativity.
 * L1 cache is more "expensive" than L2.
 * The size of the cache line has the same effect as the size of the cache on the perforamnce with different associativity values. As the size increases the different values of the associativity seem to have similar results as far as time and speed are concerned. 
 * In general larger cache sizes tend to have worse results regarding the speed and time.
 
+Taking all these into consideration we have understood that our choices on the paramters of the benchmarks in section 2, although they were effective on lowering the CPI, they are not as efficient regarding the possible "costs". (specifically we have choosen a really large size for the l1 cache)
+
 References:
   * [Difference between CPU clock and system clock](https://cs.stackexchange.com/questions/32149/what-are-system-clock-and-cpu-clock-and-what-are-their-functions)
   * [Caches affection on CPI](https://courses.cs.washington.edu/courses/cse378/07au/lectures/L18-Cache-Wrap-up.pdf)
   * [Miss rate relation to CPI](https://courses.cs.washington.edu/courses/cse378/07au/lectures/L18-Cache-Wrap-up.pdf)
+  * [Associativity](https://en.algorithmica.org/hpc/cpu-cache/associativity/)
+  * [Associativities Advantages and Disadvantages](https://en.wikipedia.org/wiki/Cache_placement_policies#Direct-mapped_cache)
+  * Αρχιτεκτονική Υπολογιστών: Μια ποσοτική προσέγγιση, 6η Αμερικάνικη Έκδοση, John L. Hennessy, David A. Patterson, σελ. 121, Εικόνα 2.8
