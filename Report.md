@@ -26,50 +26,15 @@
          cache_line_size=64
         ```
 2. For every benchmark the following information can be found in their respective `stats.txt` files:
-   * **specbzip**  
-     i) **Execution time**:
-     ```python
-     sim_seconds                                  0.083982                       # Number of seconds simulated
-     ```
-     ii) **CPI**
-     ```python
-     system.cpu.cpi                               1.679650                       # CPI: cycles per instruction
-     ```
-     iii) **Overall miss rates**:
-       * L1 Instruction cache:
-       ```python
-       system.cpu.icache.overall_miss_rate::total     0.000077                       # miss rate for overall accesses
-       ```
-       * L1 Data cache:
-       ```python
-       system.cpu.dcache.overall_miss_rate::total     0.014798                       # miss rate for overall accesses
-       ```
-       * L2 cache:
-       ```python
-       system.l2.overall_miss_rate::total           0.282163                       # miss rate for overall accesses
-       ```
-   * **specmcf**  
-     i) **Execution time**:
-     ```python
-     sim_seconds                                  0.064955                       # Number of seconds simulated
-     ```
-     ii) **CPI**:
-     ```python
-     system.cpu.cpi                               1.299095                       # CPI: cycles per instruction
-     ```
-     iii) **Overall miss rates**:
-       * L1 Instruction cache:
-       ```python
-       system.cpu.icache.overall_miss_rate::total     0.023612                       # miss rate for overall accesses
-       ```
-       * L1 Data cache:
-       ```python
-       system.cpu.dcache.overall_miss_rate::total     0.002108                       # miss rate for overall accesses
-       ```
-       * L2 cache:
-       ```python
-       system.l2.overall_miss_rate::total           0.055046                       # miss rate for overall accesses
-       ```
+
+    | Parameters | specbzip | specmcf | spechmmer | sjeng | speclbm |
+    | ------ | ------ | ------ | ------ | ------ | ------ |
+    | Execution time | 0.083982  | 0.064955  | Execution time | 0.083982  | 0.01 |
+    | CPI | 1.679650  | 1.299095  | Execution time | 0.083982  | 0.01 |
+    | L1 Instruction cache miss rates | 0.000077  | 0.023612 | Execution time | 0.083982  | 0.01 |
+    | L1 Data cache miss rates | 0.014798 |  0.002108  | Execution time | 0.083982  | 0.01 |
+    | L2 cache miss rates | 0.282163  | 0.055046 | Execution time | 0.083982  | 0.01 |
+
    * **spechmmer**
 
      i) **Execution time**:
