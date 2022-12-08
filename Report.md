@@ -29,81 +29,13 @@
 
     | Parameters | specbzip | specmcf | spechmmer | sjeng | speclbm |
     | ------ | ------ | ------ | ------ | ------ | ------ |
-    | Execution time | 0.083982  | 0.064955  | Execution time | 0.083982  | 0.01 |
-    | CPI | 1.679650  | 1.299095  | Execution time | 0.083982  | 0.01 |
-    | L1 Instruction cache miss rates | 0.000077  | 0.023612 | Execution time | 0.083982  | 0.01 |
-    | L1 Data cache miss rates | 0.014798 |  0.002108  | Execution time | 0.083982  | 0.01 |
-    | L2 cache miss rates | 0.282163  | 0.055046 | Execution time | 0.083982  | 0.01 |
+    | Execution time | 0.083982  | 0.064955  | 0.05936 | 0.513528 | 0.174671 |
+    | CPI | 1.679650  | 1.299095  | 1.187917 | 10.270554 | 3.493415 |
+    | L1 Instruction cache miss rates | 0.000077  | 0.023612 | 0.000221 | 0.000020 | 0.000094 |
+    | L1 Data cache miss rates | 0.014798 |  0.002108  | 0.001637 | 0.121831 | 0.060972 |
+    | L2 cache miss rates | 0.282163  | 0.055046 | 0.077760 | 0.907550 | 0.999944 |
 
-   * **spechmmer**
-
-     i) **Execution time**:
-     ```python
-     sim_seconds                                  0.059396                       # Number of seconds simulated
-     ```
-     ii) **CPI**:
-     ```python
-     system.cpu.cpi                               1.187917                       # CPI: cycles per instruction
-     ```
-     iii) **Overall miss rates**:
-       * L1 Instruction cache:
-       ```python
-       system.cpu.icache.overall_miss_rate::total     0.000221                       # miss rate for overall accesses
-       ```
-       * L1 Data cache:
-       ```python
-       system.cpu.dcache.overall_miss_rate::total     0.001637                       # miss rate for overall accesses
-       ```
-       * L2 cache:
-       ```python
-       system.l2.overall_miss_rate::total           0.077760                       # miss rate for overall accesses
-       ```
-   * **sjeng**
-
-     i) **Execution time**:
-     ```python
-     sim_seconds                                  0.513528                       # Number of seconds simulated
-     ```
-     ii) **CPI**:
-     ```python
-     system.cpu.cpi                               10.270554                       # CPI: cycles per instruction
-     ```
-     iii) **Overall miss rates**:
-       * L1 Instruction cache:
-       ```python
-       system.cpu.icache.overall_miss_rate::total     0.000020                       # miss rate for overall accesses
-       ```
-       * L1 Data cache:
-       ```python
-       system.cpu.dcache.overall_miss_rate::total     0.121831                       # miss rate for overall accesses
-       ```
-       * L2 cache:
-       ```python
-       system.l2.overall_miss_rate::total           0.907550                       # miss rate for overall accesses
-       ```
-   * **speclbm**
-
-      i) **Execution time**:
-     ```python
-     sim_seconds                                  0.174671                       # Number of seconds simulated
-     ```
-     ii) **CPI**:
-     ```python
-     system.cpu.cpi                               3.493415                       # CPI: cycles per instruction
-     ```
-     iii) **Overall miss rates**:
-       * L1 Instruction cache:
-       ```python
-       system.cpu.icache.overall_miss_rate::total     0.000094                       # miss rate for overall accesses
-       ```
-       * L1 Data cache:
-       ```python
-       system.cpu.dcache.overall_miss_rate::total     0.060972                       # miss rate for overall accesses
-       ```
-       * L2 cache:
-       ```python
-       system.l2.overall_miss_rate::total           0.999944                       # miss rate for overall accesses
-       ```
+     
    Below are presented the plots for each parameter comparing each benchmark:
     * Execution Time
 
