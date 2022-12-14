@@ -153,23 +153,23 @@ Why we ended up in the equation above:
 * The size of the cache line has the same effect as the size of the cache on the perforamnce with different associativity values. As the size increases the different values of the associativity seem to have similar results as far as time and speed are concerned. 
 * In general larger cache sizes tend to have worse results regarding the speed and time.
 
-The table below presents the "Cost" - "Performance" results for each benchmark. In the first column the `Cost` is presented, based no the above function, by using the new values for the sizes and associativities. The "Cost" of the default parameter values is `102,1`. In the next columns a `cost result` is also shown. These values are calculated by dividing the "Cost" value of each line with the decreament percentage of the CPI value for the respective changes vase on the results from section 2. The Cost with the lowest value for each benchmark shows the best option regarding the changes which combines a good performance and a low cost. For negative `cost results` we conclude that the CPI doesn't decreases, so we have a better performance. (`cost result` = `Cost`/(CPI_initial_value - CPI_final_value) / CPI_initial_value)
+The table below presents the "Cost" - "Performance" results for each benchmark. In the first column the `Cost` is presented, based on the function above, by using the new values for the sizes and associativities. The "Cost" of the default parameter values is `102,1`. In the next columns a `cost result` is also shown. These values are calculated by dividing the "Cost" value of each line with the decreament percentage of the CPI value for the respective changes vase on the results from section 2. The Cost with the lowest value for each benchmark shows the best option regarding the changes which combines a good performance and a low cost. For negative `cost results` we conclude that the CPI doesn't decrease, so we have a better performance. (`cost result` = `Cost`/(CPI_initial_value - CPI_final_value) / CPI_initial_value)
 
   | Parameters | Cost | specbzip | specmcf | spechmmer | sjeng | speclbm |
   | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
-  | x2 cache line size |  106.1 | 13628.773  | -4384.2975 | 0.513528 | - | 2.581299 |
-  | x2 l1 size and assoc | 198.12  | 8994.8242  | 1785.7014 | 10.270554 | 3.493415 | 3.493293 |
-  | x2 cache line size and l1 size and assoc | zrshe  | - | - | 0.000020 | 0.000094 | - |
-  | x2 cache line size and l1 size, assoc and l2 assoc | 202.2  | 5496.0587 | 1493.1104 | 0.000020 | 6.799610 | 2.581254 |
-  | x4 cache line size and x2 l1 size, assoc and l2 assoc | dshsth | - | - | 0.000020 | 5.175560 | - |
-  | x4 cache line size and l2 assoc and x2 l1 size, assoc | sthdt | - | - | 0.000020 | 5.175560 | - |
+  | x2 cache line size |  106.1 | 13628.773  | -4384.2975 | 21222.0902 | - | 406.364247 |
+  | x2 l1 size and assoc | 198.12  | 8994.8242  | 1785.7014 | 99724.6254 | - | 5673076.88 |
+  | x2 cache line size and l1 size and assoc | zrshe  | - | - | - | - | - |
+  | x2 cache line size and l1 size, assoc and l2 assoc | 202.2  | 5496.0587 | 1493.1104 | 28368.586 | 598.311589 | 774.390171 |
+  | x4 cache line size and x2 l1 size, assoc and l2 assoc | 210.2 | - | - | - | 423.723846 | - |
+  | x4 cache line size and l2 assoc and x2 l1 size, assoc | 210.36 | - | - | - | 423.309343 | - |
 
 Based on the results of the table above here are the best options for each benchmark:
 * **specbzip**:  **5496.0587** -> x2 cache line size and l1 size, assoc and l2 assoc 
 * **specmcf**: **1493.1104** -> x2 cache line size and l1 size, assoc and l2 assoc 
-* **spechmmer**:
-* **sjeng**:
-* **speclbm**: 
+* **spechmmer**: **21222.0902** -> x2 cache line size
+* **sjeng**: **423.309343** -> x4 cache line size and l2 assoc and x2 l1 size, assoc
+* **speclbm**: **406.364247** -> x2 cache line size
 
 
 Taking all these into consideration we have understood that our choices on the paramters of the benchmarks in section 2, although they were effective on lowering the CPI, they are not as efficient regarding the possible "costs". (specifically we have choosen a really large size for the l1 cache)
