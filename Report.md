@@ -29,11 +29,11 @@
 
     | Parameters | specbzip | specmcf | spechmmer | sjeng | speclbm |
     | ------ | ------ | ------ | ------ | ------ | ------ |
-    | Execution time | 0.083982  | 0.064955  | 0.05936 | 0.513528 | 0.174671 |
-    | CPI | 1.679650  | 1.299095  | 1.187917 | 10.270554 | 3.493415 |
-    | L1 Instruction cache miss rates | 0.000077  | 0.023612 | 0.000221 | 0.000020 | 0.000094 |
-    | L1 Data cache miss rates | 0.014798 |  0.002108  | 0.001637 | 0.121831 | 0.060972 |
-    | L2 cache miss rates | 0.282163  | 0.055046 | 0.077760 | 0.907550 | 0.999944 |
+    | Execution time | 0.083982 | 0.064955 | 0.05936 | 0.513528 | 0.174671 |
+    | CPI | 1.679650 | 1.299095 | 1.187917 | 10.270554 | 3.493415 |
+    | L1 Instruction cache miss rates | 0.000077 | 0.023612 | 0.000221 | 0.000020 | 0.000094 |
+    | L1 Data cache miss rates | 0.014798 | 0.002108 | 0.001637 | 0.121831 | 0.060972 |
+    | L2 cache miss rates | 0.282163 | 0.055046 | 0.077760 | 0.907550 | 0.999944 |
 
      
    Below are presented the plots for each parameter comparing each benchmark:
@@ -153,16 +153,16 @@ Why we ended up in the equation above:
 * The size of the cache line has the same effect as the size of the cache on the perforamnce with different associativity values. As the size increases the different values of the associativity seem to have similar results as far as time and speed are concerned. 
 * In general larger cache sizes tend to have worse results regarding the speed and time.
 
-The table below presents the "Cost", based no the above function, and the best option result. The best option value is the result of the division of the Cost of each change with the previously calculated CPI decreament (performance). The smaller value for each benchmark indicates the changes that need to be made in order to achive a good performane, keeping a low "Cost". The "Cost" of the default parameter values is `102,1`.
+The table below presents the "Cost", based no the above function, and the best option result. The best option value is the result of the division of the Cost of each change with the previously calculated CPI decreament (performance). The smaller value for each benchmark indicates the changes that need to be made in order to achive a good performane, keeping a low "Cost". The "Cost" of the default parameter values is `102,1`
 
-    | Parameters | Cost | specbzip | specmcf | spechmmer | sjeng | speclbm |
-    | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
-    | x2 cache line size |  106,1 | 1.666573  | 1.330534 | 0.513528 | - | 2.581299 |
-    | x2 l1 size and assoc | 198,12  | 1.642654  | 1.154963 | 10.270554 | 3.493415 | 3.493293 |
-    | x2 cache line size and l1 size and assoc | zrshe  | - | - | 0.000020 | 0.000094 | - |
-    | x2 cache line size and l1 size, assoc and l2 assoc | 202,2  | 1.617843 | 1.123168 | 0.000020 | 6.799610 | 2.581254 |
-    | x4 cache line size and x2 l1 size, assoc and l2 assoc | dshsth  | - | - | 0.000020 | 5.175560 | - |
-    | x4 cache line size and l2 assoc and x2 l1 size, assoc | sthdt | - | - | 0.000020 | 5.175560 | - |
+ | Parameters | Cost | specbzip | specmcf | spechmmer | sjeng | speclbm |
+ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
+ | x2 cache line size | 106,1 | 1.666573 | 1.330534 | 0.513528 | -- | 2.581299 |
+ | x2 l1 size and assoc | 198,12 | 1.642654 | 1.154963 | 10.270554 | 3.493415 | 3.493293 |
+ | x2 cache line size and l1 size and assoc | zrshe | -- | -- | 0.000020 | 0.000094 | -- |
+ | x2 cache line size and l1 size, assoc and l2 assoc | 202,2 | 1.617843 | 1.123168 | 0.000020 | 6.799610 | 2.581254 |
+ | x4 cache line size and x2 l1 size, assoc and l2 assoc | dshsth | -- | -- | 0.000020 | 5.175560 | -- |
+ | x4 cache line size and l2 assoc and x2 l1 size, assoc | sthdt | -- | -- | 0.000020 | 5.175560 | -- |
 
 Taking all these into consideration we have understood that our choices on the paramters of the benchmarks in section 2, although they were effective on lowering the CPI, they are not as efficient regarding the possible "costs". (specifically we have choosen a really large size for the l1 cache)
 
