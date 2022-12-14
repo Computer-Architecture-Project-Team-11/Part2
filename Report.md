@@ -159,7 +159,6 @@ The table below presents the "Cost" - "Performance" results for each benchmark. 
   | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
   | x2 cache line size |  106.1 | 13628.773  | -4384.2975 | 21222.0902 | - | 406.364247 |
   | x2 l1 size and assoc | 198.12  | 8994.8242  | 1785.7014 | 99724.6254 | - | 5673076.88 |
-  | x2 cache line size and l1 size and assoc | zrshe  | - | - | - | - | - |
   | x2 cache line size and l1 size, assoc and l2 assoc | 202.2  | 5496.0587 | 1493.1104 | 28368.586 | 598.311589 | 774.390171 |
   | x4 cache line size and x2 l1 size, assoc and l2 assoc | 210.2 | - | - | - | 423.723846 | - |
   | x4 cache line size and l2 assoc and x2 l1 size, assoc | 210.36 | - | - | - | 423.309343 | - |
