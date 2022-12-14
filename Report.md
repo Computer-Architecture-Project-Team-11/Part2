@@ -142,11 +142,8 @@ Based on the results shown on the graphs and general information and knowlegde r
 
 Function reagrding the balnce between cost and performance:
 
-> ## Best_cost_performance = 2 * cache_line_size + (16 * a * l1_size + c * l1_assoc + b * l2_size + d * l2_assoc) 
-                             2 * 64 + 16 * 10 * 96 KB + 10^6 * 2 + b * 2 MB + 10^6 * 8
-                             2 * 64 * 10^6 + 16 * 10 * 96 KB + 10^6 * 2 + b * 2 MB + 10^6 * 8
-
-(a < b, l1_size < l2_size)
+> ## Cost = cache_line_size/16 + 10^(-3) * l1_size + l1_assoc / 100 + 10^(-6) * l2_size + l2_assoc /100
+                              
 - as l1 we have inlcuded both li and ld. 
 
 Why we ended up in the equation above:
