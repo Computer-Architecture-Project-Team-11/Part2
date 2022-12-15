@@ -146,12 +146,16 @@ Function reagrding the balnce between cost and performance:
                               
 - as l1 we have inlcuded both li and ld. 
 
-Why we ended up in the equation above:
+Why we ended up in the equation above : Based on the results from the simulations of the benchmarks we concluded that in most cases the increament of all parameters contributes to the CPI decreament and consequently to a better performance. Though the extensive increament of the parameters leads to a higher "cost". For some parameters more than others:
 
-* As the size of the Cache increases the effect of small associativity of this cache on time and speed is similar to a bigger associativity.
-* L1 cache is more "expensive" than L2.
+* We firstly calculated each parameter with the appropriate coefficient in order to make them all comparable. 
+* L1 cache is more "expensive" than L2. So we used a bigger coefficient for the l1_cahe_size than for l2_cache_size so a doubling in l1_size will give a much larger Cost compared to the one produced be doubling the l2_size.
+* The cahce line size increament is not that "expensive" as the l1_size but more than the l2_size. This is also reflected by the coefficients used. 
+* Same for the associativities. Their increament is not affecting much the cost compared to the cache or cache line sizes.
 * The size of the cache line has the same effect as the size of the cache on the perforamnce with different associativity values. As the size increases the different values of the associativity seem to have similar results as far as time and speed are concerned. 
 * In general larger cache sizes tend to have worse results regarding the speed and time.
+
+To compare the cost for each change, we firstly used the initial values of the parameters and found an initial cost and then for each change we used the new values and found a new cost. The changes withh minimun cost and best performance are the best. 
 
 The table below presents the "Cost" - "Performance" results for each benchmark. In the first column the `Cost` is presented, based on the function above, by using the new values for the sizes and associativities. The "Cost" of the default parameter values is `102,1`. In the next columns a `cost result` is also shown. These values are calculated by dividing the "Cost" value of each line with the decreament percentage of the CPI value for the respective changes vase on the results from section 2. The Cost with the lowest value for each benchmark shows the best option regarding the changes which combines a good performance and a low cost. For negative `cost results` we conclude that the CPI doesn't decrease, so we have a better performance. (`cost result` = `Cost`/(CPI_initial_value - CPI_final_value) / CPI_initial_value)
 
